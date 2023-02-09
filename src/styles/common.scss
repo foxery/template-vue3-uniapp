@@ -1,0 +1,257 @@
+button {
+    border: none;
+    background-color: #fff;
+
+    &::after {
+        border: none;
+    }
+}
+
+page {
+    color: #333;
+    box-sizing: border-box;
+}
+
+// 对齐方式
+.align-middle {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.line-height-reset {
+    line-height: normal;
+}
+
+// 文档流
+.relative {
+    position: relative;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clearfix {
+
+    &:before,
+    &:after {
+        content: '';
+        display: table;
+    }
+
+    &:after {
+        clear: both;
+    }
+}
+
+.clear-overflow {
+    overflow: hidden;
+}
+
+// 按钮
+.btn-space {
+    +.btn-space {
+        margin-left: 8px;
+    }
+}
+
+.btn-size_default {
+    padding: 16rpx 13px;
+    border-radius: 12rpx;
+    font-size: 34rpx;
+    display: inline-block;
+    line-height: normal;
+}
+
+.btn-size_sm {
+    padding: 16rpx 0; //宽度待定
+    border-radius: 12rpx;
+    font-size: 28rpx;
+    display: inline-block;
+    line-height: normal;
+}
+
+.btn-size_mini {
+    padding: 6px 13px;
+    border-radius: 6px;
+    font-size: 12px;
+    display: inline-block;
+    line-height: normal;
+}
+
+.btn-style_success {
+    color: #fff;
+    border: 2rpx solid $uni-color-success;
+    background-color: $uni-color-success;
+}
+
+.btn-style_success_plain {
+    color: $uni-color-success;
+    border: 2rpx solid $uni-color-success;
+    background-color: #fff;
+}
+
+.btn-style_primay {
+    color: $uni-text-color;
+    border: 2rpx solid $uni-color-primary;
+    background-color: $uni-color-primary;
+
+    &[disabled] {
+        background-color: $uni-border-color;
+        border-color: transparent;
+    }
+}
+
+.btn-style_secondary {
+    color: #FDECD8;
+    border: 2rpx solid #324561;
+    background-color: #324561;
+
+    &[disabled] {
+        background-color: $uni-border-color;
+        border-color: transparent;
+    }
+}
+
+.btn-style_plain {
+    color: $uni-text-color;
+    border: 2rpx solid #888;
+    background-color: #fff;
+
+    &[disabled] {
+        background-color: $uni-border-color;
+    }
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+// 输入框
+.input-size-default {
+    border-radius: 12rpx;
+    padding: 18rpx 24rpx;
+    font-size: 28rpx;
+    line-height: normal;
+    box-sizing: border-box;
+}
+
+.input-style-default {
+    background-color: $uni-bg-color-grey;
+    color: $uni-text-color;
+}
+
+// 容器
+.container {
+    min-height: 100vh;
+    background-color: $uni-bg-color-grey;
+    box-sizing: border-box;
+}
+
+.container-padding {
+    padding: 16px;
+}
+
+.container-bottom-spacing {
+    padding-bottom: 80px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 6px;
+    overflow: hidden;
+
+    &.spacing,
+    .inner-spacing {
+        padding: 16px;
+    }
+
+    &.with_bg {
+        background-color: $uni-border-color-light;
+    }
+
+    +.card {
+        margin-top: 8px;
+    }
+}
+
+// 三角形
+.triangle-down {
+    width: 0;
+    height: 0;
+    border-width: 8px 4px 0;
+    border-style: solid;
+    border-color: #888 transparent transparent;
+    display: inline-block;
+}
+
+.triangle-up {
+    width: 0px;
+    height: 0px;
+    border-top: 8px solid transparent;
+    border-right: 4px solid transparent;
+    border-bottom: 8px solid #fff;
+    border-left: 4px solid transparent;
+}
+
+// 分割线
+.divider {
+    width: 100%;
+    height: 1px;
+    background-color: $uni-border-color-light;
+}
+
+.divider-spacing {
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+// 业务通用样式
+.fixed-bottom-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    padding: 24rpx 32rpx;
+    background-color: #fff;
+
+    &.border-top {
+        border-top: 2rpx solid $uni-border-color;
+    }
+}
+
+// 点
+.decoration-point {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: $uni-color-primary;
+    display: inline-block;
+}
+
+// 表单间距
+.form-spacing {
+    +.form-spacing {
+        margin-top: 16px;
+    }
+}

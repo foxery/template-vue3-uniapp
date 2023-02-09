@@ -1,0 +1,42 @@
+.uni-easyinput {
+    .is-input-border {
+        border-color: $uni-border-color !important;
+
+        &.is-input-error-border {
+            border-color: $uni-color-error !important;
+        }
+
+        .uniui-clear {
+            color: $uni-border-color !important;
+        }
+    }
+}
+
+.uni-forms-item {
+    margin-bottom: 0 !important;
+}
+
+.my-input-with_bg {
+    display: flex;
+
+    .uni-easyinput {
+        flex: auto;
+    }
+
+    .uni-easyinput__content {
+        border: none !important;
+        background-color: #f4f4f4 !important;
+    }
+
+    .my-input_unit {
+        flex: 1;
+        line-height: 2;
+        text-align: right;
+        width: auto;
+        padding-left: 6px;
+    }
+}
+
+.uni-noticebar {
+    margin-bottom: 0 !important;
+}
